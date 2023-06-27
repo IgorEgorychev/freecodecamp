@@ -1,0 +1,8 @@
+function myLocalScope() {
+  // Declare a local variable called myVar
+  const myVar = "foo";
+  console.log(myVar);
+}
+
+myLocalScope();
+console.log(myVar);
