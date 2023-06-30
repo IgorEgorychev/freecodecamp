@@ -1,0 +1,31 @@
+function sequentialSizes(val) {
+  let answer = "";
+
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;
+    default:
+      answer = "Out of range";
+      break;
+  }
+
+  return answer;
+}
+
+console.log(sequentialSizes(1)); // Output: "Low"
+console.log(sequentialSizes(4)); // Output: "Mid"
+console.log(sequentialSizes(8)); // Output: "High"
+console.log(sequentialSizes(10)); // Output: "Out of range"
